@@ -1,5 +1,5 @@
 # juten10x.github.io
-[juten10x.github.io](https://juten10x.github.io)&nbsp;&nbsp;->&nbsp;&nbsp;[juten10x.net](https://juten10x.net/)
+[juten10x.github.io](https://juten10x.github.io)&nbsp;&nbsp;→&nbsp;&nbsp;[juten10x.net](https://juten10x.net/)
 
 ## License
 * ページを構成している HTML, CSS, JavaScript コードは、 MIT License で公開しています。このライセンスの詳細については [`LICENSE`](https://github.com/juten10x/juten10x.github.io/blob/main/LICENSE) ファイルをご覧ください。
