@@ -3,14 +3,27 @@
   --b-color: #fff;
   --link-color: #4169e1;
 }
-a, a.mya {
+a {
   color: var(--link-color);
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-thickness: 1px;
 
   &:hover {
+    color: var(--link-color);
     text-decoration-thickness: 3px;
+  }
+  &:active {
+    color: #e14e41;
+  }
+}
+a.mya {
+  color: var(--font-color);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--link-color);
+	text-decoration: underline;
   }
   &:active {
     color: #e14e41;
@@ -30,15 +43,6 @@ a[href^="https://u.juten10x.net/"],
 a.mya[href^="https://juten10x.net/"] {
   &::after {
     content: none;
-  }
-}
-a.mya {
-  color: var(--font-color); 
-  text-decoration: none;
-
-  &:hover {
-	color: var(--link-color);
-    text-decoration: underline;
   }
 }
 
