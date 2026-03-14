@@ -20,6 +20,7 @@ a[href*="//"], a.mya[href*="//"] {
   &::after {
     content: "↑";
 	font-weight: 500;
+	font-family: "Inter", sans-serif;
     display: inline-block;
     transform: rotate(45deg);
   }
