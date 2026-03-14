@@ -10,12 +10,16 @@ a, a.mya {
   text-decoration-thickness: 1px;
 
   &:hover {
-	  text-decoration-thickness: 3px;
+    text-decoration-thickness: 3px;
+  }
+  &:active {
+    color: #e14e41;
   }
 }
 a[href*="//"], a.mya[href*="//"] {
   &::after {
     content: "↑";
+	font-weight: 500;
     display: inline-block;
     transform: rotate(45deg);
   }
