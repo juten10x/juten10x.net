@@ -6,7 +6,7 @@
 a {
   color: var(--link-color);
   text-decoration: underline;
-  text-underline-offset: 4px;
+  text-underline-offset: 5px;
   text-decoration-thickness: 1px;
 
   &:hover {
@@ -57,6 +57,9 @@ h2 {
 }
 h3 {
   margin: 8px 0 -8px 0;
+}
+ul {
+  line-height: 2.0;
 }
 details {
   margin: 16px 0 16px 0;
