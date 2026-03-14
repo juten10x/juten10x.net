@@ -3,35 +3,38 @@
   --b-color: #fff;
   --link-color: #4169e1;
 }
-a {
+a, a.mya {
   color: var(--link-color);
-  text-decoration: none;
-}
-a:hover {
   text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+
+  &:hover {
+	  text-decoration-thickness: 3px;
+  }
 }
 a[href*="//"], a.mya[href*="//"] {
-  text-decoration: dotted underline;
-}
-a[href*="//"]:hover {
-  text-decoration: underline;
+  &::after {
+    content: "↑";
+    display: inline-block;
+    transform: rotate(45deg);
+  }
 }
 a[href^="https://juten10x.net/"],
 a[href^="https://u.juten10x.net/"],
 a.mya[href^="https://juten10x.net/"] {
-  text-decoration: none;
+  &::after {
+    content: none;
+  }
 }
 a.mya {
   color: var(--font-color); 
   text-decoration: none;
-}
-a.mya[href*="//"]:hover {
-  color: var(--link-color);
-  text-decoration: underline;
-}
-a.mya:hover, a.mya[href*="https://juten10x.net/"]:hover {
-  color: var(--link-color);
-  text-decoration: none;
+
+  &:hover {
+	color: var(--link-color);
+    text-decoration: underline;
+  }
 }
 
 img {
