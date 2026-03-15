@@ -24,6 +24,8 @@ a.mya {
   &:hover {
     color: var(--link-color);
 	text-decoration: underline;
+	text-underline-offset: 3px;
+	text-decoration-thickness: 3px;
   }
   &:active {
     color: #e14e41;
