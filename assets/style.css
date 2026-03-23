@@ -64,6 +64,9 @@ ul {
   line-height: 2.0;
 }
 details {
+  border: 1px solid #000;
+  border-radius: .3rem;
+  padding: 8px;
   margin: 16px 0 16px 0;
 }
 summary {
