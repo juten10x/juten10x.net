@@ -1,0 +1,100 @@
+:root {
+	--font-color: #333;
+	--b-color: #fff;
+	--link-color: #0017c1;
+	--link-color-visited: #8b008b;
+	--link-color-active: #a90000;
+}
+
+body {
+	color: var(--font-color);
+	background: var(--b-color);
+	margin: 2% 5% 5% 5%;
+}
+
+a {
+	color: var(--link-color);
+	text-decoration: underline;
+	text-underline-offset: 0.3rem;
+	text-decoration-thickness: 0.09rem;
+
+	&:visited {
+		color: var(--link-color-visited);
+	}
+	&:hover {
+		text-decoration-thickness: 0.2rem;
+	}
+	&:active, &:focus {
+		color: var(--link-color-active);
+	}
+}
+
+#breadcrumbs {
+	font-size: 90%;
+	margin: 2rem 0 0 0;
+}
+
+#article_date {
+	font-size: 90%;
+}
+
+h2, h3 {
+	margin: 1.5rem 0 0 0;
+}
+
+p {
+	line-height: 1.8;
+}
+
+ul, ol {
+	line-height: 2.0;
+}
+
+pre {
+	padding: 0.5rem;
+	border: solid var(--font-color) 1px;
+	border-radius: .3rem;
+	overflow: auto;
+}
+
+/* Chrome */
+code {
+	font-size: 1rem;
+}
+
+details {
+	border: 1px solid #000;
+	border-radius: 0.3rem;
+	padding: 0.5rem;
+	margin: 2rem 0 2rem 0;
+}
+summary {
+	cursor: pointer;
+}
+
+footer {
+	margin: 2rem 0;
+}
+
+img {
+	border-radius: 0.3rem;
+}
+figcaption {
+	font-size: 90%;
+}
+@media (width > 768px) {
+	.image1 {
+		width: 50%;
+	}
+	.image2 {
+		width: 40%;
+	}
+}
+@media (width <= 768px) {
+	.image1, .image2 {
+		width: 100%;
+	}
+	figure {
+		margin: 1rem 0;
+	}
+}
